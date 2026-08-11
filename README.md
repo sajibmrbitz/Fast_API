@@ -387,3 +387,25 @@ main → Python file (main.py)
 app  → FastAPI application object
 --reload → automatically reloads when code changes
 ```
+
+
+
+
+
+
+> class 2 notes
+
+> we will use json as our database for now
+
+Used this prompt to get the datas:
+
+>give me 10 expense tracker data in json format.each tracker should have unique id plus name, >amount, category, date, description
+>format:
+>{
+>ED01:{
+>name"
+>amount:
+>category:   ......
+>}
+
+After adding the /view url and necessary load methods in **main.py**, we would see the whole DB in "url/view". For smart format, click **pretty_print**.
