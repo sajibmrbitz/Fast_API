@@ -8,7 +8,7 @@ An API is a set of rules and endpoints that allows one software application to c
 In a web application, an API usually acts as the communication layer between the frontend and backend.
 
 # Basic Web Application Architecture
-
+```text
     User
      ↓
   Frontend
@@ -16,6 +16,7 @@ In a web application, an API usually acts as the communication layer between the
 Backend / API
      ↓
   Database
+```
 
 # Frontend
 
@@ -66,7 +67,7 @@ Example for an Expense Tracker:
 # API Communication
 
 Frontend should generally not directly access the database.
-
+```text
     Frontend
        ↓ (Request)
  Backend / API
@@ -76,7 +77,7 @@ Frontend should generally not directly access the database.
   Backend / API
        ↓ (Response)
     Frontend
-
+```
 The backend acts as the middle layer between the client and the database.
 
 # API Endpoint
@@ -93,7 +94,7 @@ Examples:
 # One Backend, Multiple Clients
 
 The same backend/API can serve different types of clients.
-
+```text
         ┌── Web App
         │
     Client ─┼── Android App
@@ -103,11 +104,11 @@ The same backend/API can serve different types of clients.
            Backend
               ↓
            Database
-
+```
 # Real-World Example: University Admission System
 
 A university admission website can communicate with an education board's system/database to verify a student's SSC/HSC information.
-
+```text
     Student
        ↓
 Admission Website
@@ -123,10 +124,10 @@ Education Board DB
   Eligibility 
        ↓
     Student
-
+```
 Example eligibility condition:
 
-    SSC GPA + HSC GPA > 9
+>   SSC GPA + HSC GPA > 9
 
 The backend can retrieve/verify the student's GPA and calculate the eligibility.
 
@@ -161,7 +162,7 @@ The backend coordinates these different services and data sources.
 # Real-World Example: Google Maps
 
 A map application involves more than simply storing map data.
-
+```text
      User (Request)
        ↓
 Backend / Service
@@ -177,7 +178,7 @@ Traffic/Other Data
     Response
        ↓
   Frontend Map
-
+```
 Real-world applications can combine:
 
     Frontend
@@ -215,7 +216,7 @@ Example:
         ...
 
 For the Expense Tracker:
-
+```text
    Users
      ↓
   Frontend
@@ -223,9 +224,9 @@ For the Expense Tracker:
   FastAPI
      ↓
   Database
-
+```
 # Core Mental Model
-
+```text
     CLIENT
       ↓
    REQUEST
@@ -239,6 +240,6 @@ DB/EXT. SERVICE
    RESPONSE
       ↓
     CLIENT
-
+```
 
 > FastAPI allows us to build APIs and backend applications using Python
