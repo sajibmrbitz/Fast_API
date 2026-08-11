@@ -1,0 +1,82 @@
+{
+  "ED01": {
+    "id": "ED01",
+    "name": "Grocery Shopping",
+    "amount": 1250,
+    "category": "Food",
+    "date": "2026-08-01",
+    "description": "Weekly groceries from local market"
+  },
+  "ED02": {
+    "id": "ED02",
+    "name": "Bus Fare",
+    "amount": 80,
+    "category": "Transport",
+    "date": "2026-08-02",
+    "description": "Daily commute to university"
+  },
+  "ED03": {
+    "id": "ED03",
+    "name": "Internet Bill",
+    "amount": 1000,
+    "category": "Utilities",
+    "date": "2026-08-03",
+    "description": "Monthly home internet bill"
+  },
+  "ED04": {
+    "id": "ED04",
+    "name": "Lunch",
+    "amount": 220,
+    "category": "Food",
+    "date": "2026-08-04",
+    "description": "Lunch at a restaurant"
+  },
+  "ED05": {
+    "id": "ED05",
+    "name": "Notebook",
+    "amount": 180,
+    "category": "Education",
+    "date": "2026-08-05",
+    "description": "Notebook and stationery for classes"
+  },
+  "ED06": {
+    "id": "ED06",
+    "name": "T-Shirt",
+    "amount": 650,
+    "category": "Shopping",
+    "date": "2026-08-06",
+    "description": "Casual cotton t-shirt"
+  },
+  "ED07": {
+    "id": "ED07",
+    "name": "Mobile Recharge",
+    "amount": 300,
+    "category": "Utilities",
+    "date": "2026-08-07",
+    "description": "Monthly mobile data and call recharge"
+  },
+  "ED08": {
+    "id": "ED08",
+    "name": "Movie Ticket",
+    "amount": 450,
+    "category": "Entertainment",
+    "date": "2026-08-08",
+    "description": "Weekend movie with friends"
+  },
+  "ED09": {
+    "id": "ED09",
+    "name": "Medicine",
+    "amount": 520,
+    "category": "Health",
+    "date": "2026-08-09",
+    "description": "Purchased basic medicines"
+  },
+  "ED10": {
+    "id": "ED10",
+    "name": "Coffee",
+    "amount": 180,
+    "category": "Food",
+    "date": "2026-08-10",
+    "description": "Coffee and snacks with a friend"
+  }
+}
