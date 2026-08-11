@@ -273,8 +273,8 @@ def view():
 #       |-> these are request methods
 #       |-> CRUD operations
 #       |-> Create, Read, Update, Delete
-#       |->       |       |       |
-#       |->      Post,    Get,    Put,    Delete
+#       |->    |     |      |       |
+#       |->  Post,  Get,   Put,   Delete
 
 
 # documentation:
