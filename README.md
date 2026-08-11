@@ -243,3 +243,147 @@ DB/EXT. SERVICE
 ```
 
 > FastAPI allows us to build APIs and backend applications using Python
+
+# FastAPI Basics — Endpoints
+
+After creating the FastAPI application, endpoints can be created using decorators.
+
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+# now we can create endpoints using our api
+
+@app.get("/hello")        # decorator("/url") -> this is the endpoint
+def view():
+    return "Hello World"
+
+@app.get("/about")        # this is another endpoint
+def view():
+    return "This is the about section of our API"
+
+# to run in terminal:
+# uvicorn filename:appname --reload (auto fetches changes)
+
+
+# decorator:
+# @app.get("/path")       # path is the endpoint
+#
+#       |-> these are request methods
+#       |-> CRUD operations
+#       |-> Create, Read, Update, Delete
+#       |->       |       |       |
+#       |->      Post,    Get,    Put,    Delete
+
+
+# documentation:
+# FastAPI automatically generates documentation for your API endpoints.
+#
+# You can access the documentation at url/docs
+```
+
+# Endpoints
+
+An endpoint is a specific URL/path through which a client can communicate with the API.
+
+Examples:
+
+```text
+GET /hello
+GET /about
+```
+
+In FastAPI, endpoints are defined using decorators such as:
+
+```python
+@app.get("/hello")
+```
+
+Here:
+
+```text
+@app.get() → decorator
+"/hello"   → endpoint/path
+GET        → HTTP request method
+```
+
+# HTTP Request Methods
+
+HTTP methods define what type of operation the client wants to perform.
+
+```text
+GET     → Read / retrieve data
+POST    → Create data
+PUT     → Update data
+DELETE  → Delete data
+```
+
+These operations are commonly associated with CRUD:
+
+```text
+CRUD
+│
+├── Create → POST
+├── Read   → GET
+├── Update → PUT
+└── Delete → DELETE
+```
+
+# FastAPI Automatic Documentation
+
+FastAPI automatically generates interactive API documentation.
+
+Swagger UI is available at:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+The documentation automatically detects the endpoints defined in the application.
+
+# API Response Examples
+
+### `/hello`
+
+```text
+GET /hello
+
+Response:
+"Hello World"
+```
+
+![Hello Endpoint](assets/hello.png)
+
+### `/about`
+
+```text
+GET /about
+
+Response:
+"This is the about section of our API"
+```
+
+![About Endpoint](assets/about.png)
+
+### `/docs`
+
+FastAPI provides an interactive Swagger UI where available API endpoints can be viewed and tested.
+
+![FastAPI Documentation](assets/docs.png)
+
+# Running the Application
+
+Run the FastAPI application using Uvicorn:
+
+```bash
+uvicorn main:app --reload
+```
+
+Where:
+
+```text
+main → Python file (main.py)
+app  → FastAPI application object
+--reload → automatically reloads when code changes
+```
